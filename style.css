@@ -1,0 +1,99 @@
+   /* Fundo da página com gradiente */
+   /* Reset e fontes padrão */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva , Verdana, sans-serif;
+}
+
+/* Fundo com gradiente animado */
+body {
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container do login com estilo de cartão */
+.login-container {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 1s ease;
+}
+
+/* Título estilizado */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Estilo dos inputs */
+.login-container input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.3s border-color;
+}
+
+.login-container input:focus {
+  border-color: #66a6ff;
+  outline: none;
+  background-color: #f9f9ff;
+}
+
+/* Botão estilizado */
+.login-container button {
+  width: 100%;
+  padding: 14px;
+  background-color: #66a6ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #4a90e2;
+}
+
+/* Estilo da seção de links */
+.login-container .link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-container .link a {
+  color: #66a6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-container .link a:hover {
+  text-decoration: underline;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
